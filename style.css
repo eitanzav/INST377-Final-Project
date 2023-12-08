@@ -1,0 +1,72 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50; /* Green background color */
+    color: #ffffff; /* Light text color */
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #388E3C; /* Darker green border */
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav a {
+    color: #ffffff; /* Light text color for links */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4CAF50; /* Green background color */
+    color: #ffffff; /* Light text color */
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+}
