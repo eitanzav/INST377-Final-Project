@@ -1,72 +1,97 @@
-/* Reset some default styles */
-body, h1, h2, p, ul {
+body {
+    font-family: 'ITCAvantGardeStd-Bk', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9; /* Light background color */
-}
-
-/* Header Styles */
 header {
-    background-color: #4CAF50; /* Green background color */
-    color: #ffffff; /* Light text color */
-    padding: 1rem;
+    background-color: rgb(85, 171, 93);
+    color: white;
+    padding: 10px;
     text-align: center;
-    border-bottom: 2px solid #388E3C; /* Darker green border */
-}
-
-header h1 {
-    font-size: 2rem;
-    font-weight: bold;
 }
 
 nav ul {
     list-style-type: none;
-    text-align: center;
-    margin-top: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li {
+nav li {
     display: inline;
-    margin-right: 1rem;
+    margin-right: 20px;
 }
 
-nav a {
-    color: #ffffff; /* Light text color for links */
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-/* Main Content Styles */
 main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
+    padding: 20px;
 }
 
-section {
-    margin-bottom: 2rem;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #4CAF50; /* Green background color */
-    color: #ffffff; /* Light text color */
+#search-section {
     text-align: center;
-    padding: 1rem;
+}
+
+.search-container {
+    margin-top: 20px;
+}
+
+#recipeSearch {
+    padding: 10px;
+    width: 300px;
+}
+
+.button-50 {
+    appearance: button;
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.button-50:focus,
+.button-50:hover {
+    text-decoration: none;
+}
+
+.button-50:active {
+    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 0;
+}
+
+.button-50:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    .button-50 {
+        padding: 12px 50px;
+    }
+}
+
+footer {
+    background-color: rgb(85, 171, 93);
+    color: white;
+    text-align: center;
+    padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-/* Responsive Styles */
-@media (max-width: 600px) {
-    main {
-        padding: 1rem;
-    }
 }

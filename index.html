@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Food Allergy Recipe Finder</title>
+    <title>HappyTummy Explorer</title>
 </head>
 
 <body>
     <header>
-        <h1>Welcome to HappyTummy Explorer </h1>
+        <h1>Welcome to HappyTummy Explorer</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -23,7 +23,11 @@
     <main>
         <section id="search-section">
             <h2>Search for Safe and Delicious Recipes</h2>
-            <!-- coming soonnnnnnnn -->
+            <div class="search-container">
+                <input type="text" id="recipeSearch" placeholder="Enter your search..." />
+                <button class="button-50" onclick="searchRecipes()">Search now!</button>
+            </div>
+            <!-- Additional content goes here -->
         </section>
     </main>
 
@@ -32,8 +36,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="app.js"></script> <!-- js here soon! --
-
+    <script src="app.js"></script> <!-- js here soon! -->
 </body>
 
 </html>
