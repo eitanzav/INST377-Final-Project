@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: rgb(85, 171, 93);
+    background-color: #628957;
     color: white;
     padding: 10px;
     text-align: center;
@@ -32,6 +32,7 @@ main {
 
 .search-container {
     margin-top: 20px;
+    text-align: center; 
 }
 
 #recipeSearch {
@@ -41,19 +42,20 @@ main {
 
 .button-50 {
     appearance: button;
-    background-color: #000;
+    background-color: #1b4a1b;
     background-image: none;
-    border: 1px solid #000;
+    border: 1px solid #4cae4c; 
     border-radius: 4px;
     box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
-    display: inline-block;
+    display: block;
+    margin-top: 10px;
+    margin: 10px auto; 
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
-    margin: 0 5px 10px 0;
     overflow: visible;
     padding: 12px 40px;
     text-align: center;
@@ -75,11 +77,9 @@ main {
     outline: 0;
 }
 
-/* Main Content Styles */
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
+.button-50:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
 }
 
 @media (min-width: 768px) {
@@ -89,7 +89,7 @@ main {
 }
 
 footer {
-    background-color: rgb(85, 171, 93);
+    background-color: #628957;
     color: white;
     text-align: center;
     padding: 10px;
