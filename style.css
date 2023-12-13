@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #628957;
+    background-color: #7d9a68;
     color: white;
     padding: 10px;
     text-align: center;
@@ -42,9 +42,9 @@ main {
 
 .button-50 {
     appearance: button;
-    background-color: #1b4a1b;
+    background-color: #3e4d34;
     background-image: none;
-    border: 1px solid #4cae4c; 
+    border: 1px solid #1f261a; 
     border-radius: 4px;
     box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
     box-sizing: border-box;
@@ -89,7 +89,7 @@ main {
 }
 
 footer {
-    background-color: #628957;
+    background-color: #7d9a68;
     color: white;
     text-align: center;
     padding: 10px;
