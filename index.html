@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <title>HappyTummy Explorer</title>
 </head>
 
@@ -32,29 +34,7 @@
                     <option value="asian">Asian</option>
                     <option value="american">American</option>
                     <option value="british">British</option>
-                    <option value="cajun">Cajun</option>
-                    <option value="caribbean">Caribbean</option>
-                    <option value="chinese">Chinese</option>
-                    <option value="eastern european">Eastern European</option>
-                    <option value="european">European</option>
-                    <option value="french">French</option>
-                    <option value="german">German</option>
-                    <option value="greek">Greek</option>
-                    <option value="indian">Indian</option>
-                    <option value="irish">Irish</option>
-                    <option value="italian">Italian</option>
-                    <option value="japanese">Japanese</option>
-                    <option value="jewish">Jewish</option>
-                    <option value="korean">Korean</option>
-                    <option value="latin american">Latin American</option>
-                    <option value="mediterranean">Mediterranean</option>
-                    <option value="mexican">Mexican</option>
-                    <option value="middle eastern">Middle Eastern</option>
-                    <option value="nordic">Nordic</option>
-                    <option value="southern">Southern</option>
-                    <option value="spanish">Spanish</option>
-                    <option value="thai">Thai</option>
-                    <option value="vietnamese">Vietnamese</option>
+                    <!-- Add more cuisine options here -->
                 </select>
 
                 <!-- Diet dropdown -->
@@ -65,13 +45,7 @@
                     <option value="ketogenic">Ketogenic</option>
                     <option value="vegetarian">Vegetarian</option>
                     <option value="lacto-vegetarian">Lacto-Vegetarian</option>
-                    <option value="ovo-vegetarian">Ovo-Vegetarian</option>
-                    <option value="vegan">Vegan</option>
-                    <option value="pescetarian">Pescetarian</option>
-                    <option value="paleo">Paleo</option>
-                    <option value="primal">Primal</option>
-                    <option value="low fodmap">Low FODMAP</option>
-                    <option value="whole30">Whole30</option>
+                    <!-- Add more diet options here -->
                 </select>
 
                 <br> <!-- Add line break to move the button to the next line -->
@@ -79,7 +53,9 @@
                 <br> <!-- Add line break for better spacing -->
                 <button class="button-50" onclick="searchRecipes()">Search now!</button>
             </div>
-            <!-- Additional content goes here (button does nothing) -->
+
+            <!-- Container for search results -->
+            <div id="results-container"></div>
         </section>
     </main>
 
@@ -88,6 +64,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="script.js"></script> <!-- js script! -->
 </body>
 
