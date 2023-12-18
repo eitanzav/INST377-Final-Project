@@ -160,6 +160,3 @@ Future Development:
   Security: Continuously enhance security measures for user data protection.
   
   These enhancements will keep the application dynamic and responsive to user needs.
-
-
-
