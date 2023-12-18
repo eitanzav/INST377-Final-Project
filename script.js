@@ -30,7 +30,7 @@ function searchRecipes() {
 
 // Function to display search results
 function displayResults(data) {
-    // Get the container where you want to display the results
+    // Get the container where the results go
     const resultsContainer = document.getElementById("results-container");
 
     // Clear previous results
