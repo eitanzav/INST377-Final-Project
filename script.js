@@ -51,7 +51,30 @@ function displayResults(data) {
         card.appendChild(image);
         resultsContainer.appendChild(card);
     });
+} 
+
+const quotes_api_url = "https://zenquotes.io/api/random/[your_key]"; 
+// your_key gets replaced with actual API key
+
+async function getQuote(url) {
+
+    const quoteContainer = document.getElementById("quote-container");
+    const response = await fetch(url);
+    const data = await response.json();
+
+    // if quote container exists and is not empty
+    if(quoteContainer && data.length > 0) {
+
+        const quote = data[0].q;
+        const author = data[0].a;
+
+        quoteContainer.innerHTML = `<p>"${quote}" - ${author}</p>`;
+        
+    }
 }
+
+getQuote(quotes_api_url);
+
 
 // Attach the searchRecipes function to the button click event
 document.getElementById("searchButton").addEventListener("click", searchRecipes);
