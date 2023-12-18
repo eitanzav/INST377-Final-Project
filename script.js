@@ -1,15 +1,21 @@
-// javascript to make api work
 // Function to search for recipes based on user input
 function searchRecipes() {
     // Get the user input from the search bar
     const query = document.getElementById("recipeSearch").value;
+
+    // Get selected cuisine from the dropdown
+    const selectedCuisine = document.getElementById("cuisineDropdown").value;
+
+    // Get selected diet from the dropdown
+    const selectedDiet = document.getElementById("dietDropdown").value;
 
     // Spoonacular API endpoint
     const apiEndpoint = "https://api.spoonacular.com/recipes/complexSearch";
 
     const apiKey = "4b9165fcaea647c68ad3106a63e52749";
 
-    const apiUrl = `${apiEndpoint}?query=${query}&apiKey=${apiKey}`;
+    // Build the API URL with user input, cuisine, and diet
+    const apiUrl = `${apiEndpoint}?query=${query}&cuisine=${selectedCuisine}&diet=${selectedDiet}&apiKey=${apiKey}`;
 
     // Make a GET request to the Spoonacular API
     fetch(apiUrl)
